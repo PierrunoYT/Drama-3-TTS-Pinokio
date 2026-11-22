@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.jpeg" alt="DramaBox logo" width="160" />
+  <img src="icon.png" alt="Drama-3-TTS logo" width="160" />
 </p>
 
 # Drama-3-TTS-Pinokio — DramaBox Pinokio Launcher

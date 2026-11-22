@@ -27,14 +27,6 @@ module.exports = {
       params: { path: "app/.installed" }
     },
     {
-      method: "shell.run",
-      params: {
-        venv: "env",
-        path: "app",
-        message: "uv pip install -c ../constraints.txt -r ../requirements.txt -r ../requirements_low_vram.txt"
-      }
-    },
-    {
       method: "script.start",
       params: {
         uri: "torch.js",
@@ -42,6 +34,14 @@ module.exports = {
           venv: "env",
           path: "app"
         }
+      }
+    },
+    {
+      method: "shell.run",
+      params: {
+        venv: "env",
+        path: "app",
+        message: "uv pip install -c ../constraints.txt -r ../requirements.txt -r ../requirements_low_vram.txt"
       }
     },
     {

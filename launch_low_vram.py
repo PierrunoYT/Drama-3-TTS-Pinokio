@@ -51,7 +51,8 @@ def _profile_from_env():
         total_gb = torch.cuda.get_device_properties(0).total_memory / (1024 ** 3)
     except Exception:
         return profile_type.VerylowRAM_LowVRAM
-    if total_gb >= 24:
+    # total_memory is in GiB here: a "24 GB" card reports ~23.6-23.7 GiB.
+    if total_gb >= 23:
         return profile_type.HighRAM_HighVRAM
     if total_gb >= 17:
         return profile_type.HighRAM_LowVRAM

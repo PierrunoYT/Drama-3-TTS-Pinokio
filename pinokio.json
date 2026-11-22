@@ -1,5 +1,5 @@
 {
-  "title": "DramaBox",
+  "title": "Drama-3-TTS",
   "description": "Expressive TTS with voice cloning, prompt-driven speech synthesis built on LTX-2.3 by Resemble AI",
   "icon": "icon.jpeg",
   "platform": ["linux", "win32"],
